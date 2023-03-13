@@ -1,49 +1,97 @@
-
-<nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="/">José Paternina</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/">Inicio</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Proyectos
-                </a>
-                <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Api Películas</a></li>
-                <li><a class="dropdown-item" href="#">English Together</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link ">Habilidades</a>
-            </li>
-            </ul>
-            <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+<!-- MENU ENCABEZADO -->
+<div class="contenedor-header">
+    <header>
+        <div class="logo">
+            <a href="/">JosePater</a>
         </div>
-    </div>
-  </nav>
+        <nav id="nav">
+            <ul>
+                <li><a href="#inicialCard" onclick="seleccionar()">INICIO</a></li>
+                <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+            </ul>
+        </nav>
+        <div class="nav-responsive" onclick="mostrarOcultarMenu()"> <!-- MenuBarrita -->
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+</div>
 
-  <style>
-    .navbar-brand, .nav-link, .nav-item, .dropdown-item  {
-        color: white;
+<style>
+    .contenedor-header{
+        background: #1e2326;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 99;
     }
-
-    .navbar-brand:hover, .nav-link:hover, .nav-item:hover, .dropdown-item:hover {
-        color: black;
-        background-color: hwb(64 31% 5%);
-        font-weight: bold;
+    .contenedor-header header{
+        max-width: 1100px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+    }
+    .contenedor-header header .logo a{
+        font-family: 'Righteous';
+        font-size: 36px;
+        color: var(--colorTema);
         text-decoration: none;
-
     }
-    
-  </style>
+
+    .contenedor-header header ul{
+        display: flex;
+        list-style: none;
+    }
+
+    .contenedor-header header nav ul li a{
+        text-align: none;
+        color: #fff;
+        margin: 0 15px;
+        padding: 3px;
+        transition: .5s;
+        text-decoration: none;
+    }
+    .contenedor-header header nav ul li a:hover{
+        color: var(--colorTema);
+    }
+    .nav-responsive{    /*  MenuBarrita */
+        background-color: var(--colorTema);
+        color: #fff;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        display: none; /* Oculta el MenuBarrita*/
+    }
+    /* ========== SECCIÓN RESPONSIVE ========== */
+    @media screen and (max-width:980px){
+        nav{
+            /* Cuando la pantalla sea <= 8980px se oculta el menú */
+            display: none;
+        }
+        .nav-responsive{
+            /* Aparece el MenuBarrita */
+            display: block;
+        }
+        /* nav.responsive{
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 75px;
+            background-color:#252A2E;
+            width: 180px;
+        }
+        nav.responsive ul{
+            /* Aparece el menú desplegable 
+            display: block !important;
+        }
+        nav.responsive ul li{
+            border-bottom: 1px solid #fff;  /* Rallas blancas 
+        } */
+    }
+</style>

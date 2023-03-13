@@ -1,0 +1,144 @@
+<!-- SECCIÓN CONTACTO -->
+<section id="contacto" class="contacto">
+    <div class="contenido-seccion">
+        <h2>Contacto</h2>
+        <div class="fila">
+            
+            <!-- Formulario -->
+            <div class="col">
+                <input type="text" placeholder="Nombre">
+                <input type="text" placeholder="Número de teléfono">
+                <input type="text" placeholder="Correo">
+                <input type="text" placeholder="Tema">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                <button>
+                    Enviar mensaje<i class="fa-solid fa-paper-plane"></i>
+                    <span class="overlay"></span>
+                </button>
+            </div>
+
+            <!-- Mapa -->
+            <div class="col">
+                <img src="img/ubicacion.png" alt="">
+                <div class="info">
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Colombia
+                        </li>
+                        <li>
+                            <i class="fa-sharp fa-solid fa-mobile"></i>
+                            Llámanos: +57 317 635 1951
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            Email: hola@josepaternina.com
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<style>
+    .contacto{
+        background-image: url(/img/contacto_bg.png);
+        background-color: #1e2326;
+        color: #fff;
+        padding: 50px 0;
+    }
+    .contacto .contenido-seccion{
+        max-width: 1100px;
+        margin: auto;
+    }
+    .contacto h2{
+        font-size: 48px;
+        font-family: 'Righteous';
+        text-align: center;
+        padding: 20px 0;
+    }
+    .contacto .fila{
+        display: flex; /* Coloca el contenido en 2 columnas*/
+    }
+    .contacto .col{
+        width: 50%;
+        padding: 10px;
+        position: relative;
+    }
+    .contacto .col input, textarea{
+        display: block;
+        width: 100%;
+        padding: 18px;
+        border: none;
+        margin-bottom: 20px;
+        /* background-color: #252A2E; */
+        color: black;
+        font-size: 19px;
+    }
+    .contacto button{
+        cursor: pointer;
+        background-color: transparent;
+        border: 2px solid #fff;
+        width: fit-content;
+        display: block;
+        margin: 20px auto;
+        padding: 10px 22px;
+        font-size: 16px;
+        color: #fff;
+        position: relative;
+        z-index: 10;
+    }
+    .contacto button .overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background-color: var(--colorTema);
+        z-index: -1;
+        transition: 1s;
+    }
+    .contacto button:hover .overlay{
+        width: 100%;
+    }
+    .contacto .col img{
+        width: 100%;
+        height: 580px;
+    }
+    .contacto .col .info{
+        position: absolute;
+        top: 40%;
+        background-color: #252A2E;
+        padding: 20px;
+        width: 350px;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .contacto .col .info ul{
+        list-style: none;
+    }
+    .contacto .col .info ul li{
+        margin-bottom: 20px;
+    }
+    .contacto .col .info ul li i{
+        color: var(--colorTema);
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+    /* Pantalla <=700px se hace una solo columna (display:block;)*/
+    @media screen and (max-width:700px){
+        .contacto .fila{
+            display: block;
+        }
+        .contacto .fila .col{
+            width: 100%;
+        }
+        .contacto .fila .col img{
+            height: 300px;
+        }
+    }
+
+</style>
