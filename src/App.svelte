@@ -12,7 +12,7 @@
 <Menu />
 <InicialCard />
 <SobreMi />
-<Skills />
+<Skills /> <!-- Semio Opt  -->
 <Curriculum />
 <Portfolio />
 <Contacto />

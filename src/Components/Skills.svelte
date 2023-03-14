@@ -1,3 +1,102 @@
+<script>
+
+    let skills = {
+        techical: [
+            {
+                nombre: 'JavaScript',
+                class: 'javacript',
+                porcentaje: '75',
+            },
+            {
+                nombre: 'HTML & CSS',
+                class: 'htmlcss',
+                porcentaje: '80',
+            },
+            {
+                nombre: 'Svelte',
+                class: 'velte',
+                porcentaje: '50',
+            },
+            {
+                nombre: 'Python',
+                class: 'python',
+                porcentaje: '50',
+            },
+            {
+                nombre: 'Java',
+                class: 'java',
+                porcentaje: '40',
+            }
+        ],
+
+        professional: [
+            {
+                nombre: 'Comunicación',
+                class: 'Comunicacion',
+                porcentaje: '80',
+            },
+            {
+                nombre: 'Trabajo en Equipo',
+                class: 'trabajo',
+                porcentaje: '90',
+            },
+            {
+                nombre: 'Creatividad',
+                class: 'creatividad',
+                porcentaje: '95',
+            },
+            {
+                nombre: 'Dedicación',
+                class: 'dedicacion',
+                porcentaje: '90',
+            },
+            {
+                nombre: 'Compromiso',
+                class: 'compromiso',
+                porcentaje: '100',
+            }
+        ]
+    }
+
+    // Arreglo de los skills técnicos y profesionales
+    let techProfeSkills = [
+        "javascript",
+        "htmlcss",
+        "svelte",
+        "python",
+        "java",
+        "comunicacion",
+        "trabajo",
+        "creatividad",
+        "dedicacion",
+        "compromiso"
+    ]
+
+
+    // Efecto Skills
+    function efectoSkills() {
+        var skills = document.getElementById("skills");
+        var distancia_skills = window.innerHeight - skills.getBoundingClientRect().top;
+
+        if (distancia_skills >= 300) {
+            let abc;
+            let habilidades = document.getElementsByClassName("progreso");
+
+
+            // Aplica el efecto en todos los skills
+            for (let i = 0; i < techProfeSkills.length; i++) {
+                habilidades[i].classList.add(techProfeSkills[i]);
+            }
+        }
+    }
+
+    // Detectar Scroll
+    window.onscroll = function(){
+        efectoSkills();
+    }
+
+</script>
+
 <!-- SECCIÓN SKILL -->
 <section id="skills" class="skills">
     <div class="contenido-seccion">
@@ -7,95 +106,33 @@
             <!-- Technical Skill -->
             <div class="col">
                 <h3>Technical Skills</h3>
-
-                <div class="skill javascript">
-                    <span>JavaScript</span>
-                    <div class="barra-skill">
-                        <div class="progreso">
-                            <span>75%</span>
+                {#each skills.techical as item}
+                    <div class="skill {item.class}">
+                        <span>{item.nombre}</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>{item.porcentaje}%</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="skill htmlcss">
-                    <span>HTML & CSS</span>
-                    <div class="barra-skill">
-                        <div class="progreso">
-                            <span>80%</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <span>Svelte</span>
-                    <div class="barra-skill">
-                        <div class="progreso">
-                            <span>50%</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <span>Python</span>
-                    <div class="barra-skill">
-                        <div class="progreso">
-                            <span>55%</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <span>Java</span>
-                    <div class="barra-skill">
-                        <div class="progreso">
-                            <span>40%</span>
-                        </div>
-                    </div>
-                </div>
-
+                {/each }
             </div>
 
             <!-- Professional Skill -->
             <div class="col">
                 <h3>Professional Skills</h3>
-                <div class="skill">
-                    <span>Comunicación</span>
-                    <div class="barra-skill">
-                        <div class="progreso">
-                            <span>80%</span>
+                {#each skills.professional as item}
+                    <div class="skill {item.class}">
+                        <span>{item.nombre}</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>{item.porcentaje}%</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="skill">
-                    <span>Trabajo en Equipo</span>
-                    <div class="barra-skill">
-                        <div class="progreso">
-                            <span>90%</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <span>Creatividad</span>
-                    <div class="barra-skill">
-                        <div class="progreso">
-                            <span>98%</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <span>Dedicación</span>
-                    <div class="barra-skill">
-                        <div class="progreso">
-                            <span>89%</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <span>Compromiso</span>
-                    <div class="barra-skill">
-                        <div class="progreso">
-                            <span>100%</span>
-                        </div>
-                    </div>
-                </div>
-
+                {/each }
             </div>
+
         </div>
     </div>
 </section>
