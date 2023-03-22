@@ -1,58 +1,76 @@
+<script>
+    const curriculum = {
+        education: [
+            {
+                name: 'Ingeniería Electrónica',
+                university: 'Universidad Nacional Abierta y a Distancia - UNAD',
+                date: '2018 - 2023',
+                more: 'Robótica, Telemetría, Telecontrol, IoT'
+            },
+            {
+                name: 'Tecnología en Análisis y Desarrollo de Sistemas de Información',
+                university: 'Servicio Nacional de Aprendizaje - SENA',
+                date: '2021 - 2023',
+                more: 'Tecnologías de la información'
+            },
+            {
+                name: 'Técnico en Soporte de Aplicaciones Informáticas',
+                university: 'Instituto Centro de Sistemas - System Center',
+                date: '2021 - 2023',
+                more: 'Soporte técnico'
+            },
+        ],
+        experience: [
+            {
+                company: 'Fundación Fundasoft - Argentina',
+                perfil: 'Front-end Developer',
+                date: 'Octubre 2022 - Mayo 2023',
+                descrip: 'Pasante en el desarrollo front-end, donde se contruyen páginas usando el framework Svelte'
+            },
+        ]
+    }
+
+</script>
+
 <!-- SECCIÓN CURRICULUM -->
 <section id="curriculum" class="curriculum">
     <div class="contenido-seccion">
         <h2>Curriculum</h2>
+
         <div class="fila">
 
             <div class="col izquierda">
                 <h3>Educación</h3>
-                <div class="item izq">
-                    <h4>Ingeniería Electrónica</h4>
-                    <span class="casa">Universidad Nacional Abierta y a Distancia - UNAD</span>
-                    <span class="fecha">2018 - 2023</span>
-                    <p>Robótica, Telemetría, Telecontrol, IoT</p>
-                    <div class="conectori">
-                        <div class="circuloi"></div>
+                {#each curriculum.education as item}
+                    <div class="item izq">
+                        <h4>{item.name}</h4>
+                        <span class="casa">{item.university}</span>
+                        <span class="fecha">{item.date}</span>
+                        <p>{item.more}</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
                     </div>
-                </div>
-
-                <div class="item izq">
-                    <h4>Tecnología en Análisis y Desarrollo de Sistemas de Información</h4>
-                    <span class="casa">Servicio Nacional de Aprendizaje - SENA</span>
-                    <span class="fecha">2021 - 2023</span>
-                    <p>Tecnologías de la información</p>
-                    <div class="conectori">
-                        <div class="circuloi"></div>
-                    </div>
-                </div>
-
-                <div class="item izq">
-                    <h4>Técnico en Soporte de Aplicaciones Informática</h4>
-                    <span class="casa">Instituto Centro de Sistemas - System Center</span>
-                    <span class="fecha">2021 - 2023</span>
-                    <p>Soporte técnico</p>
-                    <div class="conectori">
-                        <div class="circuloi"></div>
-                    </div>
-                </div>
+                {/each}
             </div>
 
             <div class="col derecha">
                 <h3>Experiencia de trabajo</h3>
-                <div class="item der">
-                    <h4>Front-end Developer</h4>
-                    <span class="casa">Fundación Fundasoft - Argentina</span>
-                    <span class="fecha">Octubre 2022 - 2023</span>
-                    <p>Pasante en el desarrollo front-end, donde se contruyen
-                        páginas usando el framework Svelte
-                    </p>
-                    <div class="conectord">
-                        <div class="circulod"></div>
+                {#each  curriculum.experience as item}
+                    <div class="item der">
+                        <h4>{item.perfil}</h4>
+                        <span class="casa">{item.perfil}</span>
+                        <span class="fecha">{item.date}</span>
+                        <p>{item.descrip}</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
                     </div>
-                </div>
+                {/each}
             </div>
 
         </div>
+        
     </div>
 </section>
 

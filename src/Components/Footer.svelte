@@ -51,7 +51,11 @@
         top: -25px;
         border-radius: 50%;
         line-height: 50px;  /* centra el ícono dentro del círculo */
-        font-size: 25px;
+        font-size: 20px;
+    }
+    footer .arriba:hover{
+        background-color: yellow;
+        color: black;
     }
     footer .redes a:hover{
         transition: .5s;

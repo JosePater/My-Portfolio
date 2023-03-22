@@ -1,3 +1,24 @@
+<script>
+    const contacto = {
+        img: 'img/ubicacion.png',
+        input: ['Nombre', 'Número de teléfono', 'Correo', 'Tema'], // Campos de textos
+        datos: [
+            {
+                icon: 'fa-solid fa-location-dot',
+                name: 'Colombia'
+            },
+            {
+                icon: 'fa-sharp fa-solid fa-mobile',
+                name: 'Llámanos: +57 317 635 1951'
+            },
+            {
+                icon: 'fa-solid fa-envelope',
+                name: 'Email: hola@josepaternina.com'
+            },
+        ],
+    }
+</script>
+
 <!-- SECCIÓN CONTACTO -->
 <section id="contacto" class="contacto">
     <div class="contenido-seccion">
@@ -6,11 +27,10 @@
             
             <!-- Formulario -->
             <div class="col">
-                <input type="text" placeholder="Nombre">
-                <input type="text" placeholder="Número de teléfono">
-                <input type="text" placeholder="Correo">
-                <input type="text" placeholder="Tema">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                {#each contacto.input as item}
+                    <input type="text" placeholder="{item}"> <!-- Campos de textos -->
+                {/each}
+                <textarea name="" id="" cols="30" rows="7" placeholder="Mensaje"></textarea>
                 <button>
                     Enviar mensaje<i class="fa-solid fa-paper-plane"></i>
                     <span class="overlay"></span>
@@ -19,21 +39,15 @@
 
             <!-- Mapa -->
             <div class="col">
-                <img src="img/ubicacion.png" alt="">
+                <img src="{contacto.img}" alt="">
                 <div class="info">
                     <ul>
-                        <li>
-                            <i class="fa-solid fa-location-dot"></i>
-                            Colombia
-                        </li>
-                        <li>
-                            <i class="fa-sharp fa-solid fa-mobile"></i>
-                            Llámanos: +57 317 635 1951
-                        </li>
-                        <li>
-                            <i class="fa-solid fa-envelope"></i>
-                            Email: hola@josepaternina.com
-                        </li>
+                        {#each contacto.datos as item}
+                            <li>
+                                <i class="{item.icon}"></i>
+                                {item.name}
+                            </li>
+                        {/each}
                     </ul>
                 </div>
             </div>
@@ -105,14 +119,14 @@
     }
     .contacto .col img{
         width: 100%;
-        height: 580px;
+        height: 573px;
     }
     .contacto .col .info{
         position: absolute;
         top: 40%;
         background-color: #252A2E;
         padding: 20px;
-        width: 350px;
+        width: 380px;
         left: 50%;
         transform: translate(-50%,-50%);
     }

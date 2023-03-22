@@ -1,39 +1,45 @@
+<script>
+    const sobreMi = {
+        cargo: 'DESARROLLADOR FRONT-END JÚNIOR',
+        name: 'José Paternina',
+        descrip: 'ing electrónico apasionado por el desarrollo de desarrollo web y la otras tecnologías.',
+        datos: [
+            {name:'Cumpleaños', valor:'30-09-1993'},
+            {name:'Teléfono', valor:'+57 317 635 1951'},
+            {name: 'Email', valor: 'hola@josepaternina.com'},
+            {name: 'Website', valor: 'www.web.com'},
+            {name: 'Ubicación', valor: 'Colombia'},
+        ],
+        intereses: [
+            {name: 'Deporte', class: 'fa-solid fa-chess'},
+            {name: 'Android', class: 'fa-brands fa-android'},
+            {name: 'Libros', class: 'fa-solid fa-book'},
+            {name: 'Playa', class: 'fa-solid fa-umbrella-beach'},
+        ]
+    }
+
+</script>
+
 <!-- SECCIÓN SOMRE MI -->
 <section id="sobremi" class="sobremi">
     <div class="contenido-seccion">
         <h2>Sobre Mí</h2>
-        <p>Hola, <span>soy José Paternina, </span>ing electrónico apasionado por el desarrollo de
-            desarrollo web.
-        </p>
+        <p>Hola, soy <span>{sobreMi.name}, </span> {sobreMi.descrip}</p>
 
         <div class="fila">
             <!-- Datos personales -->
             <div class="col">
                 <h3>Datos Personales</h3>
                 <ul>
+                    {#each sobreMi.datos as item}
                     <li>
-                        <strong>Cumpleaños:</strong>
-                        30-09-1993
+                        <strong>{item.name}:</strong>
+                        {item.valor}
                     </li>
-                    <li>
-                        <strong>Teléfono:</strong>
-                        +57 317 635 1951
-                    </li>
-                    <li>
-                        <strong>Email:</strong>
-                        www.web.com
-                    </li>
-                    <li>
-                        <strong>Website:</strong>
-                        30-09-1993
-                    </li>
-                    <li>
-                        <strong>Ubicación:</strong>
-                        Colombia
-                    </li>
+                    {/each}
                     <li>
                         <strong>Cargo:</strong>
-                        <span>DESARROLLADOR FRONT-END JÚNIOR</span>
+                        <span>{sobreMi.cargo}</span>
                     </li>
                 </ul>
             </div>
@@ -42,25 +48,15 @@
             <div class="col">
                 <h3>Intereses</h3>
                 <div class="contenedor-intereses">
-                    <div class="intereses">
-                        <i class="fa-solid fa-chess"></i>
-                        <span>Deporte</span>
-                    </div>
-                    <div class="intereses">
-                        <i class="fa-brands fa-android"></i>
-                        <span>Android</span>
-                    </div>
-                    <div class="intereses">
-                        <i class="fa-solid fa-book"></i>
-                        <span>Libros</span>
-                    </div>
-                    <div class="intereses">
-                        <i class="fa-solid fa-umbrella-beach"></i>
-                        <span>Playa</span>
-                    </div>
-                    
+                    {#each sobreMi.intereses as item}
+                        <div class="intereses">
+                            <i class="{item.class}"></i>
+                            <span>{item.name}</span>
+                        </div>
+                    {/each}
                 </div>
             </div>
+            
         </div>
         <button>
             Descargar CV<i class="fa-solid fa-download"></i>
@@ -123,6 +119,10 @@
         padding: 3px;
         font-weight: bold;
         border-radius: 5px;
+    }
+    .sobremi .fila .col ul li span:hover{
+        background-color: yellow;
+        cursor:default;
     }
     .sobremi .fila .col .contenedor-intereses{
         display: flex;

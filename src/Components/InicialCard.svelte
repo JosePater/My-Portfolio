@@ -1,19 +1,38 @@
+<script>
+    export const inicialCard = {
+        name: 'JOSÉ PATERNINA',
+        profession: [
+            {type: 'Ingeniero Electrónico'},
+            {type: 'Tecnólogo en Análisis y Desarrollo de Sistemas de Información'},
+            {type: 'Técnico en Soporte de Aplicaciones Informáticas'},
+        ],
+        redes: [
+            {icon: 'fa-brands fa-facebook-f', link:'#skills'},
+            {icon: 'fa-brands fa-twitter', link:'/'},
+            {icon: 'fa-brands fa-skype', link:'/'},
+            {icon: 'fa-brands fa-linkedin', link:'/'},
+            {icon: 'fa-solid fa-rss', link:'/'},
+        ]
+    }
+
+</script>
+
 <!-- SECCIÓN inicialCard -->
 <section id="inicialCard" class="inicialCard">
     <div class="contenido-banner">
         <div class="contenedor-img">
             <img src="img/hero.png" alt="">
         </div>
-        <h1>JOSÉ PATERNINA</h1>
-        <h2>Ingeniero Electrónico</h2>
-        <h2>Tecnólogo en Análisis y Desarrollo de Sistemas de Información</h2>
-        <h2>Técnico en Soporte de Aplicaciones Informáticas</h2>
+        <h1>{inicialCard.name}</h1>
+
+        {#each inicialCard.profession as item}
+            <h2>{item.type}</h2>            
+        {/each}
+
         <div class="redes">
-            <a href="/"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="/"><i class="fa-brands fa-twitter"></i></a>
-            <a href="/"><i class="fa-brands fa-skype"></i></a>
-            <a href="/"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="/"><i class="fa-solid fa-rss"></i></a>
+            {#each inicialCard.redes as red}
+                <a href="{red.link}"><i class="{red.icon}"></i></a>
+            {/each}
         </div>
     </div>
 </section>

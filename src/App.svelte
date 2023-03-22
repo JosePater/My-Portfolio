@@ -10,11 +10,11 @@
 </script>
 
 <Menu />
-<InicialCard />
-<SobreMi />
+<InicialCard /> <!-- Opt  -->
+<SobreMi /> <!-- Opt  -->
 <Skills /> <!-- Semio Opt  -->
-<Curriculum />
-<Portfolio />
-<Contacto />
+<Curriculum /> <!-- Opt  -->
+<Portfolio /> <!-- Opt  -->
+<Contacto /> <!-- Opt  -->
 <Footer />
 

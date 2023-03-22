@@ -1,32 +1,38 @@
+<script>
+    const portfolio = [
+        {
+            name: 'Página Web',
+            descrip: 'Sitio web English Together',
+            img: 'img/p1.png'
+        },
+        {
+            name: 'Api Películas',
+            descrip: 'Acceso de info películas mediante API',
+            img: 'img/p2.png'
+        },
+        {
+            name: 'Página de Helados',
+            descrip: 'Galería de tienda de helados',
+            img: 'img/p1.png'
+        },
+    ]
+</script>
+
 <!-- SECCIÓN PORTFOLIO-->
 <section id="portfolio" class="portfolio">
     <div class="contenido-seccion">
         <h2>PORTFOLIO</h2>
         <div class="galeria">
 
-            <div class="proyecto">
-                <img src="img/p1.png" alt="">
-                <div class="overlay">
-                    <h3>Página Web</h3>
-                    <p>Sitio web English Together</p>
-                </div>
-            </div>
-
-            <div class="proyecto">
-                <img src="img/p2.png" alt="">
-                <div class="overlay">
-                    <h3>Api Películas</h3>
-                    <p>Acceso de info películas mediante API</p>
-                </div>
-            </div>
-
-            <div class="proyecto">
-                <img src="img/p1.png" alt="">
-                <div class="overlay">
-                    <h3>Página Web</h3>
-                    <p>Sitio web English Together</p>
-                </div>
-            </div>
+            {#each portfolio as item}
+                <div class="proyecto">
+                    <img src="{item.img}" alt="">
+                    <div class="overlay">
+                        <h3>{item.name}</h3>
+                        <p>{item.descrip}</p>
+                    </div>
+                </div>               
+            {/each}
 
         </div>
     </div>
@@ -88,6 +94,7 @@
     }
     .portfolio .galeria .proyecto .overlay:hover h3{
         margin-bottom: 0px;
+        font-weight: bold;
     }
 
     /* Pantalla <=700px se hace una solo columna (display:block;)*/
