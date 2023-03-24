@@ -1,5 +1,5 @@
-<script>
-    export const inicialCard = {
+<script context="module">
+    export const inicialCard = { // Objeto para exportar
         name: 'JOSÉ PATERNINA',
         profession: [
             {type: 'Ingeniero Electrónico'},
@@ -7,7 +7,7 @@
             {type: 'Técnico en Soporte de Aplicaciones Informáticas'},
         ],
         redes: [
-            {icon: 'fa-brands fa-facebook-f', link:'#skills'},
+            {icon: 'fa-brands fa-facebook-f', link:'/'},
             {icon: 'fa-brands fa-twitter', link:'/'},
             {icon: 'fa-brands fa-skype', link:'/'},
             {icon: 'fa-brands fa-linkedin', link:'/'},

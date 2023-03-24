@@ -1,15 +1,19 @@
+<script>
+    import { inicialCard } from './InicialCard.svelte'; // importar Objeto
+</script>
+
 <!-- SECCIÓN FOOTER -->
 <footer>
+    <!-- Botón Ir-al-inicio -->
     <a href="#inicialCard" class="arriba">
         <i class="fa-sharp fa-solid fa-angles-up"></i>
     </a>
 
+    <!-- Redes sociales -->
     <div class="redes">
-        <a href="/"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="/"><i class="fa-brands fa-twitter"></i></a>
-        <a href="/"><i class="fa-brands fa-skype"></i></a>
-        <a href="/"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="/"><i class="fa-solid fa-rss"></i></a>
+        {#each inicialCard.redes as red}
+            <a href="{red.link}"><i class="{red.icon}"></i></a>
+        {/each}
     </div>
 
 </footer>
