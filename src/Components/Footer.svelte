@@ -12,7 +12,8 @@
     <!-- Redes sociales -->
     <div class="redes">
         {#each inicialCard.redes as red}
-            <a href="{red.link}"><i class="{red.icon}"></i></a>
+            <!-- svelte-ignore security-anchor-rel-noreferrer -->
+            <a href="{red.link}" target="_blank"><i class="{red.icon}"></i></a>
         {/each}
     </div>
 

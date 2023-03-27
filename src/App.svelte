@@ -16,5 +16,5 @@
 <Curriculum /> <!-- Opt  -->
 <Portfolio /> <!-- Opt  -->
 <Contacto /> <!-- Opt  -->
-<Footer />
+<Footer /> <!-- Opt  -->
 

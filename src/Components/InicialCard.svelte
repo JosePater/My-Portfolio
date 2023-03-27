@@ -7,11 +7,10 @@
             {type: 'Técnico en Soporte de Aplicaciones Informáticas'},
         ],
         redes: [
-            {icon: 'fa-brands fa-facebook-f', link:'/'},
-            {icon: 'fa-brands fa-twitter', link:'/'},
-            {icon: 'fa-brands fa-skype', link:'/'},
-            {icon: 'fa-brands fa-linkedin', link:'/'},
-            {icon: 'fa-solid fa-rss', link:'/'},
+            {icon: 'fa-brands fa-linkedin', link:'https://www.linkedin.com/in/josepaternina/'},
+            {icon: 'fa-brands fa-github', link:'https://github.com/JosePater'},
+            {icon: 'fa-brands fa-twitter', link:'https://twitter.com/JosePater30'},
+            {icon: 'fa-brands fa-skype', link:'https://join.skype.com/invite/tnjJTojEUuxU'},
         ]
     }
 
@@ -23,7 +22,7 @@
         <div class="contenedor-img">
             <img src="img/hero.png" alt="">
         </div>
-        <h1>{inicialCard.name}</h1>
+        <h1 class="fa-fade">{inicialCard.name}</h1>
 
         {#each inicialCard.profession as item}
             <h2>{item.type}</h2>            
@@ -31,9 +30,11 @@
 
         <div class="redes">
             {#each inicialCard.redes as red}
-                <a href="{red.link}"><i class="{red.icon}"></i></a>
+                <!-- svelte-ignore security-anchor-rel-noreferrer -->
+                <a href="{red.link}" target="_blank"><i class="{red.icon} fa-beat"></i></a>
             {/each}
         </div>
+
     </div>
 </section>
 
@@ -42,7 +43,7 @@
         background: linear-gradient(to top, rgba(30,35,38, .8), rgba(30,35,38,1)),
         url(/img/fondo.jpg);
         background-size: cover;
-        height: 100vh;
+        height: 125vh;
         color: #fff;
         display: flex;
         align-items: center;

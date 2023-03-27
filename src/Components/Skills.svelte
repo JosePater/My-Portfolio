@@ -1,6 +1,6 @@
 <script>
-
-    let skills = {
+    // My Skills
+    const skills = {
         techical: [
             {
                 nombre: 'JavaScript',
@@ -56,9 +56,8 @@
                 porcentaje: '100',
             }
         ]
-    }
+    };
 
-    // Arreglo de los skills técnicos y profesionales
     let techProfeSkills = [
         "javascript",
         "htmlcss",
@@ -69,9 +68,8 @@
         "trabajo",
         "creatividad",
         "dedicacion",
-        "compromiso"
-    ]
-
+        "compromiso",
+    ];
 
     // Efecto Skills
     function efectoSkills() {
@@ -79,10 +77,8 @@
         var distancia_skills = window.innerHeight - skills.getBoundingClientRect().top;
 
         if (distancia_skills >= 300) {
-            let abc;
             let habilidades = document.getElementsByClassName("progreso");
-
-
+        
             // Aplica el efecto en todos los skills
             for (let i = 0; i < techProfeSkills.length; i++) {
                 habilidades[i].classList.add(techProfeSkills[i]);

@@ -11,10 +11,10 @@
             {name: 'Ubicación', valor: 'Colombia'},
         ],
         intereses: [
-            {name: 'Deporte', class: 'fa-solid fa-chess'},
-            {name: 'Android', class: 'fa-brands fa-android'},
-            {name: 'Libros', class: 'fa-solid fa-book'},
-            {name: 'Playa', class: 'fa-solid fa-umbrella-beach'},
+            {name: 'Deporte', icon: 'fa-solid fa-chess'},
+            {name: 'Android', icon: 'fa-brands fa-android'},
+            {name: 'Libros', icon: 'fa-solid fa-book'},
+            {name: 'Playa', icon: 'fa-solid fa-umbrella-beach'},
         ]
     }
 
@@ -50,7 +50,7 @@
                 <div class="contenedor-intereses">
                     {#each sobreMi.intereses as item}
                         <div class="intereses">
-                            <i class="{item.class}"></i>
+                            <i class="{item.icon} fa-bounce"></i>
                             <span>{item.name}</span>
                         </div>
                     {/each}
