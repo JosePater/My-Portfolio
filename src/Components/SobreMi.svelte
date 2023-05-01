@@ -2,12 +2,13 @@
     const sobreMi = {
         cargo: 'DESARROLLADOR FRONT-END JÚNIOR',
         name: 'José Paternina',
-        descrip: 'ing electrónico apasionado por el desarrollo de desarrollo web y la otras tecnologías.',
+        url_CV: 'https://drive.google.com/file/d/1M6DuRE-1DG1yOWRBG6-fuq0tG2TeMblG/view',
+        descrip: 'ingeniero electrónico apasionado por el desarrollo de desarrollo web y la otras tecnologías.',
         datos: [
             {name:'Cumpleaños', valor:'30-09-1993'},
             {name:'Teléfono', valor:'+57 317 635 1951'},
-            {name: 'Email', valor: 'hola@josepaternina.com'},
-            {name: 'Website', valor: 'www.web.com'},
+            {name: 'Email', valor: 'josepater_1130@hotmail.com'},
+            {name: 'Website', valor: 'https://www.linkedin.com/in/josepaternina'},
             {name: 'Ubicación', valor: 'Colombia'},
         ],
         intereses: [
@@ -59,8 +60,10 @@
             
         </div>
         <button>
-            Descargar CV<i class="fa-solid fa-download"></i>
-            <span class="overlay"></span>
+            <a href={sobreMi.url_CV} target="_blank" rel="noopener noreferrer">
+                Descargar CV <i class="fa-solid fa-download"></i>
+            </a>
+             <span class="overlay"></span> 
         </button>
     </div>
 </section>
@@ -159,6 +162,11 @@
         color: #fff;
         position: relative;
         z-index: 10;
+    }
+    .sobremi button a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 16px;
     }
     .sobremi button .overlay{
         position: absolute;
