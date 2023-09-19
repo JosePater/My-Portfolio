@@ -6,6 +6,7 @@
   import Curriculum from '../components/Curriculum.svelte';
   import Portfolio from '../components/Portfolio.svelte';
   import Contacto from '../components/Contacto.svelte';
+  import WhatsAppButton from '../components/WhatsAppButton.svelte';
 </script>
 
 <div class="app">
@@ -18,6 +19,7 @@
     <Curriculum />
     <Portfolio />
     <Contacto />
+    <WhatsAppButton />
   </main>
 
   <footer>
