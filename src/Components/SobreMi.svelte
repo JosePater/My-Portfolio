@@ -6,7 +6,7 @@
         descrip: 'ingeniero electrónico apasionado por el desarrollo de desarrollo web y la otras tecnologías.',
         datos: [
             {name:'Cumpleaños', valor:'30-09-1993'},
-            {name:'Teléfono', valor:'+57 317 635 1951'},
+            {name:'Teléfono', valor:'+57 301 650 2350'},
             {name: 'Email', valor: 'josepater_1130@hotmail.com'},
             {name: 'Website', valor: 'https://www.linkedin.com/in/josepaternina'},
             {name: 'Ubicación', valor: 'Colombia'},

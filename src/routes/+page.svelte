@@ -20,7 +20,7 @@
 <section id="inicialCard" class="inicialCard">
     <div class="contenido-banner">
         <div class="contenedor-img">
-            <img src="img/hero.png" alt="">
+            <img src="/images/hero.png" alt="">
         </div>
         <h1 class="fa-fade">{inicialCard.name}</h1>
 
@@ -41,7 +41,7 @@
 <style>
     .inicialCard{
         background: linear-gradient(to top, rgba(30,35,38, .8), rgba(30,35,38,1)),
-        url(/img/fondo.jpg);
+        url(/images/background.jpg);
         background-size: cover;
         height: 125vh;
         color: #fff;

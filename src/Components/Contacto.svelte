@@ -1,6 +1,6 @@
 <script>
     const contacto = {
-        img: 'img/ubicacion.png',
+        img: '/images/ubicacion.png',
         input: ['Nombre', 'Número de teléfono', 'Correo', 'Tema'], // Campos de textos
         datos: [
             {
@@ -9,7 +9,7 @@
             },
             {
                 icon: 'fa-sharp fa-solid fa-mobile',
-                name: 'Llámanos: +57 317 635 1951'
+                name: 'Llámanos: +57 301 650 2350'
             },
             {
                 icon: 'fa-solid fa-envelope',
@@ -58,7 +58,7 @@
 
 <style>
     .contacto{
-        background-image: url(/img/contacto_bg.png);
+        background-image: url(/images/contacto_bg.png);
         background-color: #1e2326;
         color: #fff;
         padding: 50px 0;

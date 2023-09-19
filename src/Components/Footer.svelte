@@ -1,5 +1,5 @@
 <script>
-    import { inicialCard } from './InicialCard.svelte'; // importar Objeto
+    import { inicialCard } from "../routes/+page.svelte"; // importar Objeto
 </script>
 
 <!-- SECCIÓN FOOTER -->
