@@ -1,12 +1,12 @@
 <script>
   import Header from './Header.svelte';
-  import SobreMi from '../components/SobreMi.svelte';
-  import Skills from '../components/Skills.svelte';
-  import Footer from '../components/Footer.svelte';
-  import Curriculum from '../components/Curriculum.svelte';
-  import Portfolio from '../components/Portfolio.svelte';
-  import Contacto from '../components/Contacto.svelte';
-  import WhatsAppButton from '../components/WhatsAppButton.svelte';
+  import SobreMi from '../Components/SobreMi.svelte';
+  import Skills from '../Components/Skills.svelte';
+  import Footer from '../Components/Footer.svelte';
+  import Curriculum from '../Components/Curriculum.svelte';
+  import Portfolio from '../Components/Portfolio.svelte';
+  import Contacto from '../Components/Contacto.svelte';
+  import WhatsAppButton from '../Components/WhatsAppButton.svelte';
 </script>
 
 <div class="app">
