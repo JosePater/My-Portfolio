@@ -13,7 +13,7 @@
             },
             {
                 icon: 'fa-solid fa-envelope',
-                name: 'Email: hola@josepaternina.com'
+                name: 'Email: josepater_1130@hotmail.com'
             },
         ],
     }
@@ -132,9 +132,11 @@
     }
     .contacto .col .info ul{
         list-style: none;
+        margin-left: -20px;
     }
     .contacto .col .info ul li{
         margin-bottom: 20px;
+        margin-left: -10px;
     }
     .contacto .col .info ul li i{
         color: var(--colorTema);
@@ -143,7 +145,7 @@
     }
 
     /* Pantalla <=700px se hace una solo columna (display:block;)*/
-    @media screen and (max-width:700px){
+    @media screen and (max-width:750px){
         .contacto .fila{
             display: block;
         }
