@@ -2,7 +2,7 @@
     const sobreMi = {
         cargo: 'DESARROLLADOR FRONT-END JÚNIOR',
         name: 'José Paternina',
-        url_CV: 'https://drive.google.com/file/d/1M6DuRE-1DG1yOWRBG6-fuq0tG2TeMblG/view',
+        url_CV: 'https://drive.google.com/file/d/1YKUBzNfJBru-GOQWbqIK0PCl6ti9w7-1/view',
         descrip: 'ingeniero electrónico apasionado por el desarrollo de desarrollo web y la otras tecnologías.',
         datos: [
             {name:'Cumpleaños', valor:'30-09-1993'},
