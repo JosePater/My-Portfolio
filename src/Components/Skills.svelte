@@ -88,11 +88,6 @@
     }
   }
 
-//   // Detectar Scroll
-//   on: scroll = function () {
-//     efectoSkills();
-//   };
-
   onMount(() => {
     window.addEventListener('scroll', efectoSkills);
 

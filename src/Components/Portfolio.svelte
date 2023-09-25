@@ -110,11 +110,11 @@
     margin-bottom: 0px;
     font-weight: bold;
   }
-  /* .portfolio .galeria .proyecto .overlay:hover a{
-        text-decoration: none;
-        margin-bottom: 0px;
-        font-weight: bold;
-    } */
+  .portfolio .galeria .proyecto .overlay:hover a {
+    text-decoration: none;
+    margin-bottom: 0px;
+    font-weight: bold;
+  }
 
   /* Pantalla <=700px se hace una solo columna (display:block;)*/
   @media screen and (max-width: 700px) {
