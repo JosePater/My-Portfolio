@@ -4,19 +4,19 @@
       name: 'Página Web',
       descrip: 'Sitio web English Together',
       img: '/images/portfolio-EnglishTogether.png',
-      url: 'www.fundasoft.com',
+      url: 'https://www.fundasoft.org/proyectos.html',
     },
     {
       name: 'Api Películas',
       descrip: 'Acceso de info películas mediante API',
       img: '/images/portfolio-API-peliculas.png',
-      url: 'www.google.com',
+      url: '/',
     },
     {
       name: 'Contador de Palabras',
       descrip: 'Contador de palabras repetidas',
       img: '/images/portfolio-counter-words.png',
-      url: 'www.google.com',
+      url: 'https://contar-palabras.netlify.app/',
     },
   ];
 </script>
