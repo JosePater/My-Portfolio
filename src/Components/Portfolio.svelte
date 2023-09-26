@@ -10,7 +10,7 @@
       name: 'Api Películas',
       descrip: 'Acceso de info películas mediante API',
       img: '/images/portfolio-API-peliculas.png',
-      url: '/',
+      url: 'https://api-peliculas-populares.netlify.app/',
     },
     {
       name: 'Contador de Palabras',

@@ -26,21 +26,21 @@
         perfil: 'Front-end Developer',
         date: 'Octubre 2022 - Mayo 2023',
         descrip:
-          'Pasante en el desarrollo front-end, donde se contruyen páginas usando el framework Svelte',
+          'Pasante en el desarrollo front-end, donde colaboré con el desarrollo de una página web a una ONG usando framework Svelte',
       },
       {
-        company: 'Proyecto personal',
-        perfil: 'Front-end Developer',
-        date: 'Febrero 2023 - Mayo 2023',
+        company: 'Mejora del proyecto "API Películas"',
+        perfil: 'Front-end & Back-end Developer',
+        date: 'Agosto 2023 - septiembre 2023',
         descrip:
-          'API Películas. Acceso a las películas más populares en tiempo real mediante API',
+          'Desarrollé la mejora de una aplicación web basada en la API de The Movie Database (TMDb) que muestra información detallada sobre películas. Se incluyó la implementación de mejoras en el frontend para la interfaz de usuario, como filtrado por categorías, navegación de la página y responsiva. Se desarrolla la optimización del backend, gestionando las solicitudes a la API de TMDb, la lógica del servidor y la seguridad del sistema',
       },
       {
-        company: 'Proyecto personal',
+        company: 'Proyecto "Contador de Palabras"',
         perfil: 'Front-end Developer',
-        date: 'Agosto 2023 - En ejecución',
+        date: 'Agosto 2023 - septiembre 2023',
         descrip:
-          'Página: contador de palabras repetidas. Se filtran palabras comunes, cantidad de letras',
+          'Esta aplicación web es una creación propia que permite a los usuarios ingresar texto y contar las palabras que se repiten. Además, ofrece configuraciones personalizables, como la capacidad de omitir palabras específicas, establecer un límite mínimo de letras y distinguir entre mayúsculas y minúsculas',
       },
     ],
   };
