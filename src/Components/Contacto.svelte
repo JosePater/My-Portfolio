@@ -23,14 +23,14 @@
 <section id="contacto" class="contacto">
   <div class="contenido-seccion">
     <h2>Contacto</h2>
-    <div class="fila">
+    <form action="" method="post" class="fila">
       <!-- Formulario -->
       <div class="col">
         {#each contacto.input as item}
-          <input type="text" placeholder={item} /> <!-- Campos de textos -->
+          <input type="text" placeholder={item} required/> <!-- Campos de textos -->
         {/each}
-        <textarea name="" id="" cols="30" rows="7" placeholder="Mensaje" />
-        <button>
+        <textarea name="" id="" cols="30" rows="7" placeholder="Mensaje" required/>
+        <button type="submit">
           Enviar mensaje<i class="fa-solid fa-paper-plane" />
           <span class="overlay" />
         </button>
@@ -50,7 +50,7 @@
           </ul>
         </div>
       </div>
-    </div>
+  </form>
   </div>
 </section>
 
