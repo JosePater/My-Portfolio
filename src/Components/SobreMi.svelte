@@ -5,7 +5,7 @@
     url_CV:
       'https://drive.google.com/file/d/1YKUBzNfJBru-GOQWbqIK0PCl6ti9w7-1/view',
     descrip:
-      'ingeniero electrónico apasionado por el desarrollo de desarrollo web y la otras tecnologías.',
+      'ingeniero electrónico, tecnólogo ASDI, apasionado por el desarrollo de software y la otras tecnologías.',
     datos: [
       { name: 'Cumpleaños', valor: '30-09-1993' },
       { name: 'Teléfono', valor: '+57 301 650 2350' },
