@@ -43,7 +43,7 @@
   <div class="contenido-seccion">
     <h2>Contacto</h2>
     <div class="fila">
-      <form class="col" name="contact" netlify>
+      <form class="col" name="contact" data-netlify="true">
         {#each contacto.input as item}
           <input
             type={item.name}
