@@ -1,7 +1,26 @@
 <script>
   const contacto = {
     img: '/images/ubicacion.png',
-    input: ['Nombre', 'Número de teléfono', 'Correo', 'Tema'], // Campos de textos
+    input: [
+      {
+        title: 'Nombre',
+        name: 'name',
+      },
+      {
+        title: 'Número de teléfono',
+        name: 'number',
+      },
+      {
+        title: 'Correo electrónico',
+        name: 'email',
+      },
+      {
+        title: 'Asunto',
+        name: 'subject',
+      },
+    ],
+
+    // Campos de textos
     datos: [
       {
         icon: 'fa-solid fa-location-dot',
@@ -23,13 +42,28 @@
 <section id="contacto" class="contacto">
   <div class="contenido-seccion">
     <h2>Contacto</h2>
-    <form action="" method="post" class="fila">
+    <form class="fila" name="MyPortfolio-contact" netlify>
       <!-- Formulario -->
       <div class="col">
         {#each contacto.input as item}
-          <input type="text" placeholder={item} required/> <!-- Campos de textos -->
+          <input
+            type={item.name}
+            name={item.name}
+            placeholder={item.title}
+            required
+          />
+          <!-- Campos de textos -->
         {/each}
-        <textarea name="" id="" cols="30" rows="7" placeholder="Mensaje" required/>
+
+        <textarea
+          type="text"
+          name="message"
+          cols="30"
+          rows="7"
+          placeholder="Mensaje"
+          required
+        />
+
         <button type="submit">
           Enviar mensaje<i class="fa-solid fa-paper-plane" />
           <span class="overlay" />
@@ -50,7 +84,7 @@
           </ul>
         </div>
       </div>
-  </form>
+    </form>
   </div>
 </section>
 
