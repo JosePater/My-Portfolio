@@ -42,9 +42,8 @@
 <section id="contacto" class="contacto">
   <div class="contenido-seccion">
     <h2>Contacto</h2>
-    <form class="fila" name="MyPortfolio-contact" netlify>
-      <!-- Formulario -->
-      <div class="col">
+    <div class="fila">
+      <form class="col" name="MyPortfolio-contact" netlify>
         {#each contacto.input as item}
           <input
             type={item.name}
@@ -52,7 +51,6 @@
             placeholder={item.title}
             required
           />
-          <!-- Campos de textos -->
         {/each}
 
         <textarea
@@ -68,7 +66,7 @@
           Enviar mensaje<i class="fa-solid fa-paper-plane" />
           <span class="overlay" />
         </button>
-      </div>
+      </form>
 
       <!-- Mapa -->
       <div class="col">
@@ -84,7 +82,7 @@
           </ul>
         </div>
       </div>
-    </form>
+    </div>
   </div>
 </section>
 
