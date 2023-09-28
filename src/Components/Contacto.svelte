@@ -1,4 +1,4 @@
-<script>
+<script context="module">
   export const prerender = true;
   const contacto = {
     img: '/images/ubicacion.png',
@@ -44,7 +44,8 @@
   <div class="contenido-seccion">
     <h2>Contacto</h2>
     <div class="fila">
-      <form class="col" name="contact" data-netlify="true" action="/">
+      <form class="col" name="MyPortfolio-contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+        <input type="hidden" name="MyPortfolio-contact" value="contact" />
         {#each contacto.input as item}
           <input
             type={item.name}
@@ -67,7 +68,6 @@
           Enviar mensaje<i class="fa-solid fa-paper-plane" />
           <span class="overlay" />
         </button>
-        <input type="hidden" name="contact" value="contact" />
       </form>
 
       <!-- Mapa -->
