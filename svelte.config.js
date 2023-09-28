@@ -16,12 +16,6 @@ const config = {
       // if `edge` is true, this option cannot be used
       split: false,
     }),
-    prerender: {
-      crawl: true,
-      enabled: true,
-      force: true,
-      pages: ['*'],
-    },
   },
 };
 
