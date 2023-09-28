@@ -44,7 +44,7 @@
   <div class="contenido-seccion">
     <h2>Contacto</h2>
     <div class="fila">
-      <form class="col" name="contact" method="POST" data-netlify="true">
+      <form class="col" name="contact" data-netlify="true" action="/">
         {#each contacto.input as item}
           <input
             type={item.name}
@@ -67,7 +67,7 @@
           Enviar mensaje<i class="fa-solid fa-paper-plane" />
           <span class="overlay" />
         </button>
-        <input type="hidden" name="form-name" value="contact" />
+        <input type="hidden" name="contact" value="contact" />
       </form>
 
       <!-- Mapa -->
@@ -117,12 +117,12 @@
   textarea {
     display: block;
     width: 100%;
-    padding: 18px;
+    padding: 12px;
     border: none;
     margin-bottom: 20px;
     /* background-color: #252A2E; */
     color: black;
-    font-size: 19px;
+    font-size: 16px;
   }
   .contacto button {
     cursor: pointer;
@@ -152,7 +152,7 @@
   }
   .contacto .col img {
     width: 100%;
-    height: 573px;
+    height: 465px;
   }
   .contacto .col .info {
     position: absolute;
