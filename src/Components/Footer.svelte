@@ -12,9 +12,9 @@
   <!-- Redes sociales -->
   <div class="redes">
     {#each inicialCard.redes as red}
-      <!-- svelte-ignore security-anchor-rel-noreferrer -->
       <a href={red.link} target="_blank"><i class={red.icon} /></a>
     {/each}
+    <p>&copy 2023 | José Paternina</p>
   </div>
 </footer>
 
