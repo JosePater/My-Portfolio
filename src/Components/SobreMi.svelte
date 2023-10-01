@@ -9,7 +9,7 @@
     datos: [
       { name: 'Cumpleaños', valor: '30-09-1993' },
       { name: 'Teléfono', valor: '+57 301 650 2350' },
-      { name: 'Email', valor: 'josepater_1130@hotmail.com' },
+      { name: 'Email', valor: 'josepaternina.dev@gmail.com' },
       { name: 'Website', valor: 'https://www.linkedin.com/in/josepaternina' },
       { name: 'Ubicación', valor: 'Colombia' },
     ],

@@ -29,11 +29,11 @@
       },
       {
         icon: 'fa-sharp fa-solid fa-mobile',
-        name: 'Llámanos: +57 301 650 2350',
+        name: 'Teléfono: +57 301 650 2350',
       },
       {
         icon: 'fa-solid fa-envelope',
-        name: 'Email: josepater_1130@hotmail.com',
+        name: 'Email: josepaternina.dev@gmail.com',
       },
     ],
   };
