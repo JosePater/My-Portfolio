@@ -8,10 +8,9 @@ Este es mi portafolio, el cual está creado con lenguajes como HTML, CSS, JavaSc
 
 
 ## Autor - ✒
-**José Paternina**
+**José Luis Paternina Martínez**
 * <a href="https://linkedin.com/in/josepaternina" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="josepaternina" height="30" width="40" /></a>[LinkedIn](https://www.linkedin.com/in/josepaternina/)
-* [Behance](https://www.behance.net/midominio)
-* [Porfolioweb](https://josepaternina.netlify.app/)
+* [Portfolio Web](https://josepaternina.netlify.app/)
 
 ## Instalación 📥
 Consultar documentación SvelteKit: framework de JavaScript.
