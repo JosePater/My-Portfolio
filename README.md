@@ -13,11 +13,8 @@ Este es mi portafolio, el cual está creado con lenguajes como HTML, CSS, JavaSc
 * [Behance](https://www.behance.net/midominio)
 * [Porfolioweb](https://josepaternina.netlify.app/)
 
-## Ver ejemplo en vivo 🎞️
-- [ENLACEGITHUBPAGES](ENLACEGITHUBPAGES)
-
 ## Instalación 📥
-Este proyecto no necesita de instalación. Simplemente abre la carpeta o haz doble click en el .html
+Consultar documentación SvelteKit: framework de JavaScript.
 
 ## Contratación 📬
 Correo de contacto: josepaternina.dev@gmail.com
