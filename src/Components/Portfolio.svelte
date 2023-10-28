@@ -7,7 +7,7 @@
       url: 'https://www.fundasoft.org/proyectos.html',
     },
     {
-      name: 'Api Películas',
+      name: 'Buscador de Películas',
       descrip: 'Acceso de info películas mediante API',
       img: '/images/portfolio-API-peliculas.png',
       url: 'https://api-peliculas-populares.netlify.app/',
@@ -17,6 +17,12 @@
       descrip: 'Contador de palabras repetidas',
       img: '/images/portfolio-counter-words.png',
       url: 'https://contar-palabras.netlify.app/',
+    },
+    {
+      name: 'Todo-app React',
+      descrip: 'Gestión de tareas que se almacena en localStore',
+      img: '/images/portfolio-TodoApp.png',
+      url: 'https://github.com/JosePater/todo-app',
     },
   ];
 </script>
