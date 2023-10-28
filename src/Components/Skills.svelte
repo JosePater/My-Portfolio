@@ -5,7 +5,7 @@
     techical: [
       {
         nombre: 'JavaScript',
-        class: 'javacript',
+        class: 'javascript',
         porcentaje: '75',
       },
       {
@@ -14,9 +14,14 @@
         porcentaje: '80',
       },
       {
+        nombre: 'React',
+        class: 'react',
+        porcentaje: '70',
+      },
+      {
         nombre: 'Svelte',
         class: 'velte',
-        porcentaje: '70',
+        porcentaje: '80',
       },
       {
         nombre: 'Python',
@@ -62,6 +67,7 @@
   let techProfeSkills = [
     'javascript',
     'htmlcss',
+    'react',
     'svelte',
     'python',
     'java',
@@ -239,6 +245,19 @@
     }
   }
 
+  .skills .skill .react {
+    width: 0%;
+    animation: 2s react forwards;
+  }
+  @keyframes react {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 70%;
+    }
+  }
+
   .skills .skill .svelte {
     width: 0%;
     animation: 2s svelte forwards;
@@ -248,7 +267,7 @@
       width: 0%;
     }
     100% {
-      width: 50%;
+      width: 80%;
     }
   }
 
