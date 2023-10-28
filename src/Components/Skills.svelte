@@ -20,7 +20,7 @@
       },
       {
         nombre: 'Svelte',
-        class: 'velte',
+        class: 'svelte',
         porcentaje: '80',
       },
       {
@@ -38,7 +38,7 @@
     professional: [
       {
         nombre: 'Comunicación',
-        class: 'Comunicacion',
+        class: 'comunicacion',
         porcentaje: '80',
       },
       {
@@ -64,19 +64,9 @@
     ],
   };
 
-  let techProfeSkills = [
-    'javascript',
-    'htmlcss',
-    'react',
-    'svelte',
-    'python',
-    'java',
-    'comunicacion',
-    'trabajo',
-    'creatividad',
-    'dedicacion',
-    'compromiso',
-  ];
+  const techical = skills.techical.map(item => item.class);
+  const professional = skills.professional.map(item => item.class);
+  const techProfeSkills = [...techical,...professional];
 
   // Efecto Skills
   function efectoSkills() {
