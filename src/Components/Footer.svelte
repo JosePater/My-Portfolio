@@ -1,5 +1,23 @@
 <script>
   import { inicialCard } from '../routes/+page.svelte'; // importar Objeto
+  // Date
+  const today = new Date();
+  const year = today.getFullYear();
+  const months = [
+    'Enero',
+    'Febrero',
+    'Marzo',
+    'Abril',
+    'Mayo',
+    'Junio',
+    'Julio',
+    'Agosto',
+    'Septiembre',
+    'Octubre',
+    'Noviembre',
+    'Diciembre',
+  ];
+  const month = months[today.getMonth()];
 </script>
 
 <!-- SECCIÓN FOOTER -->
@@ -14,7 +32,7 @@
     {#each inicialCard.redes as red}
       <a href={red.link} target="_blank"><i class={red.icon} /></a>
     {/each}
-    <p>&copy 2023 | José Paternina</p>
+    <p>&copy {month} {year} | José Paternina</p>
   </div>
 </footer>
 
