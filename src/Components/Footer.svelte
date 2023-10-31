@@ -1,5 +1,5 @@
 <script>
-  import { inicialCard } from '../routes/+page.svelte'; // importar Objeto
+  import CardRedes from './CardRedes.svelte';
   // Date
   const today = new Date();
   const year = today.getFullYear();
@@ -28,12 +28,9 @@
   </a>
 
   <!-- Redes sociales -->
-  <div class="redes">
-    {#each inicialCard.redes as red}
-      <a href={red.link} target="_blank"><i class={red.icon} /></a>
-    {/each}
-    <p>&copy {month} {year} | José Paternina</p>
-  </div>
+  <CardRedes />
+
+  <p>&copy {month} {year} | José Paternina</p>
 </footer>
 
 <style>
@@ -44,22 +41,6 @@
     text-align: center;
     position: relative;
     width: 100%;
-  }
-  footer .redes {
-    margin-bottom: 20px;
-  }
-  footer .redes a {
-    color: #fff;
-    display: inline-block;
-    text-decoration: none;
-    border: 1px solid #fff; /* Crea un cuadro en cada ícono de redes */
-    border-radius: 100%; /* Pasar de cuadro a círculo */
-    width: 42px;
-    height: 42px;
-    line-height: 42px; /* Centra los íconos de redes dentro del círculo */
-    margin: 40px 5px; /* Separa los íconos  */
-    font-size: 20px;
-    transition: 0.5s;
   }
   footer .arriba {
     display: block;
@@ -78,10 +59,5 @@
   footer .arriba:hover {
     background-color: yellow;
     color: black;
-  }
-  footer .redes a:hover {
-    transition: 0.5s;
-    background-color: var(--colorTema);
-    transform: scale(1.2);
   }
 </style>
