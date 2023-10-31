@@ -135,4 +135,8 @@
       width: 100%;
     }
   }
+
+  .proyecto:hover {
+    transform: scale(1.1);
+  }
 </style>

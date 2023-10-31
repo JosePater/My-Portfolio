@@ -82,5 +82,6 @@
   footer .redes a:hover {
     transition: 0.5s;
     background-color: var(--colorTema);
+    transform: scale(1.2);
   }
 </style>

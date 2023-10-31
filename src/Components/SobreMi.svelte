@@ -191,4 +191,9 @@
       width: fit-content;
     }
   }
+
+  .sobremi .contenido-seccion .intereses:hover {
+    transform: scale(1.1);
+  }
+
 </style>

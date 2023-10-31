@@ -99,9 +99,10 @@
     color: blue; /* me */
     transition: 0.5s;
     background-color: var(--colorTema);
+    transform: scale(1.2);
   }
   .inicialCard .contenido-banner h2:hover {
     color: var(--colorTema);
-    font-weight: bold;
+    transform: scale(1.1);
   }
 </style>
