@@ -14,6 +14,11 @@
         porcentaje: '80',
       },
       {
+        nombre: 'Angular',
+        class: 'angular',
+        porcentaje: '50',
+      },
+      {
         nombre: 'React',
         class: 'react',
         porcentaje: '70',
@@ -235,6 +240,18 @@
     }
   }
 
+  .skills .skill .angular {
+    width: 0%;
+    animation: 2s angular forwards;
+  }
+  @keyframes angular {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 50%;
+    }
+  }
   .skills .skill .react {
     width: 0%;
     animation: 2s react forwards;
