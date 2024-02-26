@@ -42,6 +42,13 @@
         descrip:
           'Esta aplicación web es una creación propia que permite a los usuarios ingresar texto y contar las palabras que se repiten. Además, ofrece configuraciones personalizables, como la capacidad de omitir palabras específicas, establecer un límite mínimo de letras y distinguir entre mayúsculas y minúsculas',
       },
+      {
+        company: 'Proyecto "Encriptador de texto"',
+        perfil: 'Front-end Developer [Orale Next Education + Alura]',
+        date: 'Febrero 2024',
+        descrip:
+          'Este proyecto consiste en una aplicación que encripta y desencripta textos utilizando un sistema de sustitución de letras. Con esta herramienta, se puede intercambiar mensajes secretos con otras personas que conozcan el secreto de la encriptación utilizada.',
+      },
     ],
   };
 </script>

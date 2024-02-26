@@ -24,6 +24,12 @@
       img: '/images/portfolio-TodoApp.png',
       url: 'https://github.com/JosePater/todo-app',
     },
+    {
+      name: 'Encriptador de texto',
+      descrip: 'Cifra y descrifra textos',
+      img: '/images/portfolio-encrypt.png',
+      url: 'https://josepater.github.io/ONE-encryptor/',
+    },
   ];
 </script>
 
